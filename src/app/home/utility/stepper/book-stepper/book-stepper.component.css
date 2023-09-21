@@ -1,0 +1,59 @@
+.header ol {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+.header ol li {
+    flex-grow: 1;
+    margin: 1rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    position: relative;
+    height: auto;
+}
+.header ol li.active {
+    background-color: black;
+    color: white;
+}
+.header ol li a {
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    color: inherit;
+}
+.header ol li a:hover {
+    border-bottom: solid thin #000;
+}
+.body {
+    margin: 0 auto;
+    padding: 1rem;
+}
+.header ul {
+    display: flex;
+    position: relative;
+}
+.header ul li{
+    width: 20.16%;
+    margin-right: 10px;
+}
+.header ul li a{
+    display: inline-block;
+    width: 100%;
+    height: 7px;
+    background: #e6e6e6;
+    border-radius: 3.5px;
+}
+.header ul li.first a, .header ul li.checked a {
+    background:#edb7f3; /* #f3d4b7;*/
+    transition: all .5s ease;
+}
+.custom-book{
+    margin-left: -3.5em;
+}
+@media screen and (max-width: 700px){
+    .custom-book{
+        width: max-content;
+        margin-left: -3.5em;
+    }
+}

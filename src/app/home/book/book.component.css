@@ -1,0 +1,98 @@
+.example-stepper {
+    margin-top: 8px;
+  }
+  
+  .mat-form-field {
+    margin-top: 16px;
+  }
+  .my-footer {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .flex{ 
+    border: 1px solid rgb(236, 234, 234) ;
+  }
+  .right{
+    color: #000;
+  }
+  .doctorName{
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .rating{
+    color: yellow;
+  }
+  .location{
+    color: rgb(104, 102, 102);
+  }
+  
+  .type{
+     border: 1px solid  rgb(156, 152, 152);
+    width: 900px;
+    height: 550px;
+       /* box-sizing: border-box; */
+     /* text-align: center; */
+  
+  }
+  .data{
+    position: relative;
+    left: 50px;
+  }
+  /* .div{
+    display: flex;
+    height:   100vh;
+
+  } */
+  .container{
+    width: 90%;
+    max-width: 20em;
+    height: 2.5em;
+    position: relative;
+    padding-left: 1px;
+  }
+  .form-input{
+    position: absolute;
+    height: 3em;
+    width: 50%;
+    /* outline: none; */
+    padding-left:2em ;
+     /* color: white; */
+    /* padding-left: 1em; */
+ 
+
+  }
+  label{
+    position: relative;
+    /* font-family: 'poppins',sans-serif; */
+    left: 1em;
+     
+    top: 3px;
+    /* cursor: text; */
+    transition:top 350ms ease-in font-size 350ms ease-in;
+      background-color: white
+     
+  }
+  /* .form-input:hover{
+    border: 2px solid red ;
+  } */
+  input[type="text"]:focus~ label,
+  .form-input:not(:placeholder-shown).form-input:not(:focus) ~label{
+    top: -0.5em;
+    font-size: 0.75em;
+    padding: 0 0.125em;
+  }
+
+.appointment{
+  width: 600px;
+  /* border-radius: 5%; */
+  border: 1px solid rgb(236, 234, 234);
+  height: 400px;
+  margin-top: 100px;
+  position: relative;
+}
+.book{
+  text-align: center;
+ }
+    

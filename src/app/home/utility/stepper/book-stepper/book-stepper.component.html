@@ -1,0 +1,28 @@
+<section class="container custom-book">
+    <!-- The navbar for the wizard -->
+    <header class="header">
+      <ol>
+        <ng-container *ngFor="let step of steps; let i = index;">
+            <ng-container *ngIf="selectedIndex ===i">
+                <li [ngClass]="(selectedIndex === i) ? activeClass : ''">           
+                    <ng-container *ngIf="step.stepLabel" [ngTemplateOutlet]="step.stepLabel.template">
+                    </ng-container>
+                            
+                </li>
+            </ng-container>
+        </ng-container>
+      </ol>
+      <ul>
+        <ng-container *ngFor="let step of steps; let i = index;">
+            <li [ngClass]="(selectedIndex === i) || (i <= selectedIndex) ? stepClass : ''">
+                <a (click)="selectedIndex = i">
+                </a>
+            </li>
+        </ng-container>
+      </ul>
+    </header>
+  
+    <div class="body">
+      <ng-container [ngTemplateOutlet]="selected.content"></ng-container>
+    </div>
+  </section>

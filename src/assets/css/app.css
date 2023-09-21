@@ -1,0 +1,146 @@
+.banner-top {
+  z-index: 1;
+}
+.topright {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 15px;
+    color:white;
+  }
+  .toptext {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    font-size: 15px;
+    color:white;
+  }
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 51px solid transparent;
+    border-right: 51px solid transparent;
+    
+    border-top: 51px solid blue;
+  }
+  .arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 51px solid transparent;
+    border-bottom: 51px solid transparent; 
+    
+    border-right:51px solid blue; 
+  }
+  .corner-style{
+      position: relative;
+      margin-top: -30px;
+      margin-left: 310px;
+      font-size: 15px;
+      color:white;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-top: 50px solid #635cdb;
+      border-bottom: 50px solid transparent;
+      border-right: 50px solid #635cdb;
+  }
+  .corner-text{
+      position: relative;
+      margin-top: -75px;
+      margin-left: 325px;
+      font-size: 15px;
+      color:white;
+      transform: rotate(45deg);
+  }
+  .regular-text{
+      color: darkred;
+      font-family: sans-serif;
+      font-style: oblique;
+      font-size: small;
+  }
+  .fixed-text{
+    position: fixed;
+    font-size: 50px;
+  }
+  
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .boldtext {
+      font-weight:bold;
+  }
+  .cancelButton{
+      margin-left: 15px;
+      background-color: gray;
+  }
+  .cancelButton:hover
+  .close:focus {
+      background-color: black;
+  }
+  .parent {
+      width:40%;
+  }
+  .child {
+      width:60%;
+  }
+  .scrollme{
+      width: 900px;
+      height: 550px;
+      overflow: auto;
+  }
+  
+  .line.extra {
+      width:100px;
+  }
+  @media (max-width: 600px) {
+    .btn,.cancelButton{
+          width: 40%;
+          font-size: small;
+          padding: 10px;
+      }
+      
+    .scrollme{
+      width: 350px;
+      height: 550px;
+      overflow: auto;
+  }	
+  }
+  

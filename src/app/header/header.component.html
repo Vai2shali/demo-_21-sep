@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-lg fixed-top trans-navigation" [ngClass]="header">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="./assets/images/logo.png" width=225px height=75px alt="" class="img-fluid b-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#mainNav" aria-controls="mainNav" 
+        (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
+        aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+                <i class="fa fa-bars"></i>
+            </span>
+          </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="mainNav" [ngbCollapse]="isCollapsed">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link active smoth-scroll" [ngClass]="{ 'active': currentSection === 'home' }" href="#home" >Home 
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link smoth-scroll" [ngClass]="{ 'active': currentSection === 'services' }" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link smoth-scroll" [ngClass]="{ 'active': currentSection === 'about' }" href="#about">About</a>
+                </li>
+               <!--  <li class="nav-item">
+                    <a class="nav-link smoth-scroll" href="#service">Service</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link smoth-scroll" [ngClass]="{ 'active': currentSection === 'book' }" href="#book">Book</a>
+                </li>
+               <!--  <li class="nav-item">
+                    <a class="nav-link smoth-scroll" href="#blog">Blog</a>
+                </li> -->
+               <!--  <li class="nav-item">
+                    <a class="nav-link smoth-scroll" href="#contact">Contact</a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- <div class="banner-area banner-1">
+    <div class="overlay gr-overlay"></div>
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 m-auto text-center col-sm-12 col-md-12">
+                        <div class="banner-content content-padding">
+                            <h5 class="subtitle">Grow your Practice with us</h5>
+                            <h1 class="banner-title">We augment medical practitioners in  improving patient care</h1>
+                            <p>We at iDigitalClinic help you manage patients effectively and smartly. Access, Analyze patient's medical records at your fingertip anytime anywhere. Save tons of paper and so money. Go green, Go paperless.</p>
+
+                            <a href="#pricing" class="btn btn-white btn-circled">lets start</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
